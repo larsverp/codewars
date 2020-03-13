@@ -1,0 +1,9 @@
+def make_readable(seconds):
+    
+    minutes = seconds // 60
+    hours = minutes // 60
+    
+    seconds = seconds - (minutes * 60)
+    minutes = minutes - (hours * 60)
+    
+    return str("%02d" %hours)+':'+str("%02d" %minutes)+':'+str("%02d" %seconds)
